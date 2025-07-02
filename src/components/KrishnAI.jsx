@@ -28,11 +28,27 @@ export default function KrishnAI() {
       const randomIndex = Math.floor(Math.random() * allShlokas.length);
       setIntroShloka(allShlokas[randomIndex]);
 
-      setTimeout(() => setShowPopup(false), 2000);
+      const timeoutId = setTimeout(() => {
+        setShowPopup(false);
+      }, 2000);
+
+      // Click to close
+      const dismissPopup = () => {
+        setShowPopup(false);
+        clearTimeout(timeoutId);
+      };
+
+      window.addEventListener("click", dismissPopup);
+
+      return () => {
+        window.removeEventListener("click", dismissPopup);
+        clearTimeout(timeoutId);
+      };
     };
 
     loadAllShlokas();
   }, []);
+
 
   async function handleSearch() {
     const cleanQuery = query.trim();
@@ -183,7 +199,7 @@ export default function KrishnAI() {
 
         <footer className="mt-12 text-center text-xs text-orange-700 opacity-80">
           <div className="py-4">
-            🕉️ Powered by the timeless wisdom of the <span className="font-semibold">Bhagavad Gita</span> • Built with ❤️ by Adarsh
+            🕉️ Powered by the timeless wisdom of the <span className="font-semibold">Bhagavad Gita</span> • Built with ❤️ by <a href="https://github.com/Dev-aadi07/Geeta-Gpt" target="_blank" className="underline">Adarsh</a>
           </div>
         </footer>
       </div>
