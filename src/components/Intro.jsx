@@ -5,7 +5,7 @@ export default function Intro({ matchedShloka, visible }) {
   if (!visible || !matchedShloka) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/20 flex items-center justify-center z-50 transition-all duration-500">
+    <div className="fixed inset-0 bg-black/30 flex items-center justify-center z-50 transition-opacity duration-500">
       <div className="bg-white/90 backdrop-blur-md p-6 rounded-xl shadow-lg max-w-md w-[90%] transform animate-slide-in">
         <h2 className="text-orange-600 font-semibold mb-2 text-center font-body">
           ✨ A Thought from the Gita

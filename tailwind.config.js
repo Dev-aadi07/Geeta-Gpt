@@ -13,9 +13,11 @@ export const theme = {
       }
     },
     fontFamily: {
-      body: ['Poppins', 'sans-serif'],
-      sanskrit: ['"Tiro Devanagari Sanskrit"', 'serif']
-    }
+        sans: ['Inter', 'sans-serif'],
+        heading: ['Playfair Display', 'serif'],
+        body: ['Hind', 'sans-serif'],
+        sanskrit: ['Tiro Devanagari Sanskrit', 'serif']
+    },
   }
 };
 export const plugins = [];
