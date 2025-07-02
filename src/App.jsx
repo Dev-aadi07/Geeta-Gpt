@@ -1,4 +1,4 @@
-import KrishnAI from "./components/KrishnAi"
+import KrishnAI from "./components/KrishnAI.jsx";
 
 function App() {
   return (
