@@ -1,12 +1,58 @@
-# React + Vite
+# 🕉️ KrishnAI — Ask the Gita
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A peaceful spiritual AI assistant that guides users with contextual wisdom from the **Bhagavad Gita**, powered by OpenAI and beautifully crafted in React + Tailwind CSS.
 
-Currently, two official plugins are available:
+[🌐 Visit Live](https://geeta-gpt-pi.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔮 Ask any life, emotional, or spiritual question — receive a matching Gita shloka
+- 📖 Over 700 curated shlokas stored in optimized JSON format
+- 🧠 GPT-3.5 turbo powered responses with fallback to exact verse if no match found
+- 🎨 Beautiful UI with relaxing fonts, animations, and spiritual themes
+- 🌤️ Random shloka popup on app load
+- ⚡ Fast & lightweight (Vite + Tailwind)
+- 🌐 SEO + social sharing optimized
+
+---
+
+## 🔧 Tech Stack
+
+- **Frontend:** React, Tailwind CSS, Vite
+- **AI Backend:** OpenAI API (GPT-3.5 Turbo)
+- **Data Source:** Bhagavad Gita (18 JSON files, each per chapter)
+- **Hosting:** Vercel
+
+---
+
+## 📦 Local Setup
+
+```bash
+git clone https://github.com/<your-username>/krishnai.git
+cd krishnai
+npm install
+
+Project Structure
+public
+├── data/
+│   └── chapter1.json ... chapter18.json
+src/
+├── components/
+│   ├── KrishnAI.jsx       # Main chatbot logic
+│   ├── Background.jsx     # Visual spiritual background
+│   └── Intro.jsx          # Splash screen with random shloka
+├── utils/
+│   └── openAI.js          # GPT-3.5 Turbo integration logic
+├── App.jsx
+└── main.jsx
+
+🌟 Credits
+  🙏 Bhagavad Gita
+  💡 OpenAI
+  🛠️ Built by Adarsh Kumar Jha
+
+❤️ Support
+  If this helped you find peace or clarity, consider ⭐ starring the repo
+  or sharing it with someone who may need a moment of spiritual guidance.
